@@ -1,33 +1,60 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cont {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  margin: 10px;
+  max-width: 330px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card p {
+  font-size: 12px;
+}
+
+.displayImg {
+  width: 330px;
+  height: 225px;
+  border-radius: 5px;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 50px 25px;
+  grid-template-areas: "profilePic userName" "profilePic userLocation" ;
+}
+
+.userAvatar {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  align-self: center;;
+  grid-area: profilePic;
+}
+
+.userName {
+  grid-area: userName;
+  margin: -10;
+  padding: 0;
+}
+
+.userLocation {
+  grid-area: userLocation;
+  margin: 0;
+  padding: 0;
+}
+
+.rating {
+  color: #00797e;
+  font-size: 20px;
+}
+
+.rating i {
+  margin: 2px;
+  font-size: 14px;
 }
